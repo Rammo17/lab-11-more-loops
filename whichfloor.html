@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          var maximum_stories = 60;
+          var usernum = parseInt(prompt("On what floor of the building is your office located?: "));
+          
+          while(usernum > maximum_stories) {
+            // statement for when the termination is NOT true which keeps the loop going...
+            console.log("You enterred: " + usernum + " but there are only " + maximum_stories + " in this building. Try again...");
+            usernum = parseInt(prompt("On what floor of the building is your office located?: "));
+          }
+          
+          console.log("Congrats! You work on floor number " + usernum);
+          
+        </script>
+    </body>
+</html>
