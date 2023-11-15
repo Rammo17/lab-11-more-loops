@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          function factorial(n) {
+            // A recursive version of the factorial function.
+            if (n < 0) return; //termination
+            if (n === 0) return 1; // the last value returned
+            return n * factorial(n-1); // how to increment
+            // here using argument "n" also as an interator (like "i" in loops)
+          }
+          
+          var usernum = parseInt(prompt("Number please..."));
+          console.log(usernum + " ! is " + factorial(usernum));
+        </script>
+    </body>
+</html>

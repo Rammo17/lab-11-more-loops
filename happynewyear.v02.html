@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          function countDown(start) {
+            console.log(start);
+            
+              let nextNumber = start - 1;
+              
+              if (nextNumber > 0) {
+                setTimeout(countDown, 1000, nextNumber);
+              } else {
+                setTimeout(console.log("HAPPY NEW YEAR!"), 1000, nextNumber)
+              }
+            }
+          var count = parseInt(prompt("How many seconds are there until the New Year?"))
+          countDown(count);
+        </script>
+    </body>
+</html>
